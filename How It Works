@@ -1,0 +1,11 @@
+# Parsing 
+paired, unpaired = parse_dot_bracket(dot_bracket)
+
+# The generate_basepair_matrix function creates a NumPy matrix where: Paired bases have a probability of 1.0, Unpaired bases are marked as 0.0
+basepair_matrix = generate_basepair_matrix(paired_adjusted, unpaired_adjusted, seq_length)
+
+# Output: List of paired and unpaired bases, Base pair probability matrix
+print("Paired bases:", paired)
+print("Unpaired bases:", unpaired)
+print(basepair_matrix)
+
